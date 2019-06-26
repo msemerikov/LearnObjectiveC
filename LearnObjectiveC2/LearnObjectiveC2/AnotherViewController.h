@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SpaceCell.h"
+#import "SatelliteTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

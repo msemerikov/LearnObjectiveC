@@ -13,6 +13,8 @@
 		4646A6B622C090E30027ECE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4646A6B422C090E30027ECE3 /* LaunchScreen.storyboard */; };
 		4646A6B922C090E30027ECE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4646A6B822C090E30027ECE3 /* main.m */; };
 		46719C9F22C0C30F005E21D5 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46719C9E22C0C30F005E21D5 /* AnotherViewController.m */; };
+		46719CAE22C25B6C005E21D5 /* SpaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46719CAD22C25B6C005E21D5 /* SpaceCell.m */; };
+		46719CB122C28255005E21D5 /* SatelliteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46719CB022C28255005E21D5 /* SatelliteTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,10 @@
 		4646A6B822C090E30027ECE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46719C9D22C0C30F005E21D5 /* AnotherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
 		46719C9E22C0C30F005E21D5 /* AnotherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
+		46719CAC22C25B6C005E21D5 /* SpaceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceCell.h; sourceTree = "<group>"; };
+		46719CAD22C25B6C005E21D5 /* SpaceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceCell.m; sourceTree = "<group>"; };
+		46719CAF22C28255005E21D5 /* SatelliteTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SatelliteTableViewController.h; sourceTree = "<group>"; };
+		46719CB022C28255005E21D5 /* SatelliteTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SatelliteTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,10 @@
 				4646A6B822C090E30027ECE3 /* main.m */,
 				46719C9D22C0C30F005E21D5 /* AnotherViewController.h */,
 				46719C9E22C0C30F005E21D5 /* AnotherViewController.m */,
+				46719CAC22C25B6C005E21D5 /* SpaceCell.h */,
+				46719CAD22C25B6C005E21D5 /* SpaceCell.m */,
+				46719CAF22C28255005E21D5 /* SatelliteTableViewController.h */,
+				46719CB022C28255005E21D5 /* SatelliteTableViewController.m */,
 			);
 			path = LearnObjectiveC2;
 			sourceTree = "<group>";
@@ -144,6 +154,8 @@
 			files = (
 				4646A6AE22C090E20027ECE3 /* MainViewController.m in Sources */,
 				4646A6B922C090E30027ECE3 /* main.m in Sources */,
+				46719CAE22C25B6C005E21D5 /* SpaceCell.m in Sources */,
+				46719CB122C28255005E21D5 /* SatelliteTableViewController.m in Sources */,
 				4646A6AB22C090E20027ECE3 /* AppDelegate.m in Sources */,
 				46719C9F22C0C30F005E21D5 /* AnotherViewController.m in Sources */,
 			);

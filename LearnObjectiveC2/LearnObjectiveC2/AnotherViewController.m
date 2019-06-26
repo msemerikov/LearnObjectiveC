@@ -8,7 +8,10 @@
 
 #import "AnotherViewController.h"
 
-@interface AnotherViewController ()
+@interface AnotherViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *spaceBodies;
 
 @end
 
@@ -18,18 +21,48 @@
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:NO];
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.spaceBodies = [NSMutableArray new];
+    [self.spaceBodies addObjectsFromArray:@[@"Sun", @"Mercury", @"Venus", @"Earth", @"Moon", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", @"Pluto"]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    [self.tableView registerClass:[SpaceCell class] forCellReuseIdentifier:@"SpaceCell"];
+    
+    self.tableView.rowHeight = 50;
+    
+    [self.tableView setDataSource:self];
+    [self.tableView setDelegate:self];
+    
+    [self.tableView setTableFooterView:[UIView alloc]];
+    
+    [self.view addSubview:self.tableView];
     
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDataSource -
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.spaceBodies count];
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SpaceCell *cell =[tableView dequeueReusableCellWithIdentifier:@"SpaceCell"];
+    [cell setupCell:[self.spaceBodies objectAtIndex:indexPath.row]];
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate -
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.spaceBodies removeObjectAtIndex:indexPath.row];
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SatelliteTableViewController *satvc = [[SatelliteTableViewController alloc] init];
+    satvc.spaceBody = _spaceBodies[indexPath.row];
+    [self.navigationController pushViewController:satvc animated:YES];
+}
 
 @end
