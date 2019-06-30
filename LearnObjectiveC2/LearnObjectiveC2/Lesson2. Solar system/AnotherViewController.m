@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:NO];
+    [self setTitle:@"Солнечная система"];
+    [self.navigationController.navigationBar setPrefersLargeTitles:YES];
     
     self.spaceBodies = [NSMutableArray new];
     [self.spaceBodies addObjectsFromArray:@[@"Sun", @"Mercury", @"Venus", @"Earth", @"Moon", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", @"Pluto"]];

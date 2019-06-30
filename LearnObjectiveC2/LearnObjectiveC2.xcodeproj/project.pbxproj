@@ -15,6 +15,10 @@
 		46719C9F22C0C30F005E21D5 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46719C9E22C0C30F005E21D5 /* AnotherViewController.m */; };
 		46719CAE22C25B6C005E21D5 /* SpaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46719CAD22C25B6C005E21D5 /* SpaceCell.m */; };
 		46719CB122C28255005E21D5 /* SatelliteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46719CB022C28255005E21D5 /* SatelliteTableViewController.m */; };
+		469956D922C7721C00E68D94 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956D822C7721C00E68D94 /* NetworkService.m */; };
+		469956DE22C7726000E68D94 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956DD22C7726000E68D94 /* NewsModel.m */; };
+		469956E122C7785400E68D94 /* NewsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E022C7785400E68D94 /* NewsListTableViewController.m */; };
+		469956E722C88F6800E68D94 /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E622C88F6800E68D94 /* NewsDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,14 @@
 		46719CAD22C25B6C005E21D5 /* SpaceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceCell.m; sourceTree = "<group>"; };
 		46719CAF22C28255005E21D5 /* SatelliteTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SatelliteTableViewController.h; sourceTree = "<group>"; };
 		46719CB022C28255005E21D5 /* SatelliteTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SatelliteTableViewController.m; sourceTree = "<group>"; };
+		469956D722C7721C00E68D94 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		469956D822C7721C00E68D94 /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		469956DC22C7726000E68D94 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		469956DD22C7726000E68D94 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		469956DF22C7785400E68D94 /* NewsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListTableViewController.h; sourceTree = "<group>"; };
+		469956E022C7785400E68D94 /* NewsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListTableViewController.m; sourceTree = "<group>"; };
+		469956E522C88F6800E68D94 /* NewsDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetail.h; sourceTree = "<group>"; };
+		469956E622C88F6800E68D94 /* NewsDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,14 +77,54 @@
 		4646A6A822C090E20027ECE3 /* LearnObjectiveC2 */ = {
 			isa = PBXGroup;
 			children = (
+				469956E222C88EF200E68D94 /* Lesson1 */,
+				469956E322C88F0C00E68D94 /* Lesson2. Solar system */,
+				469956D622C771D600E68D94 /* Services */,
 				4646A6A922C090E20027ECE3 /* AppDelegate.h */,
 				4646A6AA22C090E20027ECE3 /* AppDelegate.m */,
-				4646A6AC22C090E20027ECE3 /* MainViewController.h */,
-				4646A6AD22C090E20027ECE3 /* MainViewController.m */,
 				4646A6B222C090E30027ECE3 /* Assets.xcassets */,
 				4646A6B422C090E30027ECE3 /* LaunchScreen.storyboard */,
 				4646A6B722C090E30027ECE3 /* Info.plist */,
 				4646A6B822C090E30027ECE3 /* main.m */,
+				469956DF22C7785400E68D94 /* NewsListTableViewController.h */,
+				469956E022C7785400E68D94 /* NewsListTableViewController.m */,
+				469956E522C88F6800E68D94 /* NewsDetail.h */,
+				469956E622C88F6800E68D94 /* NewsDetail.m */,
+			);
+			path = LearnObjectiveC2;
+			sourceTree = "<group>";
+		};
+		469956D622C771D600E68D94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				469956DA22C7724400E68D94 /* Model */,
+				469956D722C7721C00E68D94 /* NetworkService.h */,
+				469956D822C7721C00E68D94 /* NetworkService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		469956DA22C7724400E68D94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				469956DC22C7726000E68D94 /* NewsModel.h */,
+				469956DD22C7726000E68D94 /* NewsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		469956E222C88EF200E68D94 /* Lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				4646A6AC22C090E20027ECE3 /* MainViewController.h */,
+				4646A6AD22C090E20027ECE3 /* MainViewController.m */,
+			);
+			path = Lesson1;
+			sourceTree = "<group>";
+		};
+		469956E322C88F0C00E68D94 /* Lesson2. Solar system */ = {
+			isa = PBXGroup;
+			children = (
 				46719C9D22C0C30F005E21D5 /* AnotherViewController.h */,
 				46719C9E22C0C30F005E21D5 /* AnotherViewController.m */,
 				46719CAC22C25B6C005E21D5 /* SpaceCell.h */,
@@ -80,7 +132,7 @@
 				46719CAF22C28255005E21D5 /* SatelliteTableViewController.h */,
 				46719CB022C28255005E21D5 /* SatelliteTableViewController.m */,
 			);
-			path = LearnObjectiveC2;
+			path = "Lesson2. Solar system";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4646A6AE22C090E20027ECE3 /* MainViewController.m in Sources */,
+				469956E122C7785400E68D94 /* NewsListTableViewController.m in Sources */,
 				4646A6B922C090E30027ECE3 /* main.m in Sources */,
 				46719CAE22C25B6C005E21D5 /* SpaceCell.m in Sources */,
+				469956DE22C7726000E68D94 /* NewsModel.m in Sources */,
+				469956E722C88F6800E68D94 /* NewsDetail.m in Sources */,
 				46719CB122C28255005E21D5 /* SatelliteTableViewController.m in Sources */,
 				4646A6AB22C090E20027ECE3 /* AppDelegate.m in Sources */,
+				469956D922C7721C00E68D94 /* NetworkService.m in Sources */,
 				46719C9F22C0C30F005E21D5 /* AnotherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +356,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MikhailSemerikov.LearnObjectiveC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MikhailSemerikov.LearnObjectiveC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

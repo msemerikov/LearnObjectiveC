@@ -26,23 +26,29 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
-        self.spaceBodyImage = [[UIImageView alloc] initWithFrame:CGRectMake(16, 5, 40, 40)];
+        self.spaceBodyImage = [[UIImageView alloc] init];
         [self.spaceBodyImage setContentMode:UIViewContentModeScaleAspectFill];
         [self.spaceBodyImage setBackgroundColor:[UIColor whiteColor]];
         [self.contentView addSubview:self.spaceBodyImage];
         
-        self.spaceBodyLabel = [[UILabel alloc] initWithFrame:CGRectMake(74, 5, 120, 40)];
+        self.spaceBodyLabel = [[UILabel alloc] init];
         [self.spaceBodyLabel setTextAlignment:NSTextAlignmentLeft];
         [self.spaceBodyLabel setFont:[UIFont systemFontOfSize:20 weight:UIFontWeightRegular]];
         [self.contentView addSubview:self.spaceBodyLabel];
         
-        self.satellitesCount = [[UILabel alloc] initWithFrame:CGRectMake(self.bounds.size.width - 25, 5, 25, 40)];
+        self.satellitesCount = [[UILabel alloc] init];
         [self.satellitesCount setTextAlignment:NSTextAlignmentRight];
         [self.satellitesCount setTextColor:[UIColor lightGrayColor]];
         [self.contentView addSubview:self.satellitesCount];
     }
     
     return self;
+}
+
+- (void)layoutSubviews {
+    [self.spaceBodyImage setFrame:CGRectMake(16, 5, 40, 40)];
+    [self.spaceBodyLabel setFrame:CGRectMake(74, 5, 120, 40)];
+    [self.satellitesCount setFrame:CGRectMake(self.bounds.size.width - 30, 5, 25, 40)];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

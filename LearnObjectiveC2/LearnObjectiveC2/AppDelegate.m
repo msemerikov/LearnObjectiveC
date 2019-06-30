@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "AnotherViewController.h"
+#import "NewsListTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +23,10 @@
     CGRect windowFrame = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame: windowFrame];
     
-    MainViewController *mainViewController = [[MainViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mainViewController];
+    //MainViewController *mainViewController = [[MainViewController alloc] init];
+    //AnotherViewController *anotherViewController = [[AnotherViewController alloc] init];
+    NewsListTableViewController *newsListTableViewController = [[NewsListTableViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: newsListTableViewController];
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];

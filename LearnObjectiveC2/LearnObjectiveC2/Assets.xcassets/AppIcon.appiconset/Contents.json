@@ -3,49 +3,49 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug40.png",
+      "filename" : "AppIcon_40.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug60.png",
+      "filename" : "AppIcon_60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug58.png",
+      "filename" : "AppIcon_58.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug87.png",
+      "filename" : "AppIcon_87.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug80-1.png",
+      "filename" : "AppIcon_80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug120.png",
+      "filename" : "AppIcon_120-1.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug120-1.png",
+      "filename" : "AppIcon_120.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "mzl.coopgjug180.png",
+      "filename" : "AppIcon_180.png",
       "scale" : "3x"
     },
     {
@@ -105,7 +105,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "mzl.coopgjug.png",
+      "filename" : "AppIcon_1200.png",
       "scale" : "1x"
     }
   ],
