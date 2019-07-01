@@ -22,6 +22,10 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.tableView.refreshControl = self.refreshControl;
+    
     self.indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.indicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [self.indicator setColor:[UIColor blackColor]];
@@ -41,6 +45,19 @@
             [self.indicator stopAnimating];
         });
     }];
+}
+
+- (void)refresh
+{
+    
+    [[NetworkService sharedInstance] getAllNews:^(NSArray *news) {
+        [self.news addObjectsFromArray:news];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView.refreshControl endRefreshing];
+            [self.tableView reloadData];
+        });
+    }];
+    
 }
 
 #pragma mark - Table view data source
