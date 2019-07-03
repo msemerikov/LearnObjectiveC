@@ -19,6 +19,8 @@
 		469956DE22C7726000E68D94 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956DD22C7726000E68D94 /* NewsModel.m */; };
 		469956E122C7785400E68D94 /* NewsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E022C7785400E68D94 /* NewsListTableViewController.m */; };
 		469956E722C88F6800E68D94 /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E622C88F6800E68D94 /* NewsDetail.m */; };
+		469956EA22CCF3A800E68D94 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E922CCF3A800E68D94 /* LocationService.m */; };
+		469956EE22CCFC9B00E68D94 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956ED22CCFC9B00E68D94 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,10 @@
 		469956E022C7785400E68D94 /* NewsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListTableViewController.m; sourceTree = "<group>"; };
 		469956E522C88F6800E68D94 /* NewsDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetail.h; sourceTree = "<group>"; };
 		469956E622C88F6800E68D94 /* NewsDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetail.m; sourceTree = "<group>"; };
+		469956E822CCF3A800E68D94 /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		469956E922CCF3A800E68D94 /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		469956EC22CCFC9B00E68D94 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		469956ED22CCFC9B00E68D94 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			children = (
 				469956E222C88EF200E68D94 /* Lesson1 */,
 				469956E322C88F0C00E68D94 /* Lesson2. Solar system */,
+				469956EB22CCFC5900E68D94 /* Lesson3 */,
 				469956D622C771D600E68D94 /* Services */,
 				4646A6A922C090E20027ECE3 /* AppDelegate.h */,
 				4646A6AA22C090E20027ECE3 /* AppDelegate.m */,
@@ -86,10 +93,8 @@
 				4646A6B422C090E30027ECE3 /* LaunchScreen.storyboard */,
 				4646A6B722C090E30027ECE3 /* Info.plist */,
 				4646A6B822C090E30027ECE3 /* main.m */,
-				469956DF22C7785400E68D94 /* NewsListTableViewController.h */,
-				469956E022C7785400E68D94 /* NewsListTableViewController.m */,
-				469956E522C88F6800E68D94 /* NewsDetail.h */,
-				469956E622C88F6800E68D94 /* NewsDetail.m */,
+				469956EC22CCFC9B00E68D94 /* MapViewController.h */,
+				469956ED22CCFC9B00E68D94 /* MapViewController.m */,
 			);
 			path = LearnObjectiveC2;
 			sourceTree = "<group>";
@@ -100,6 +105,8 @@
 				469956DA22C7724400E68D94 /* Model */,
 				469956D722C7721C00E68D94 /* NetworkService.h */,
 				469956D822C7721C00E68D94 /* NetworkService.m */,
+				469956E822CCF3A800E68D94 /* LocationService.h */,
+				469956E922CCF3A800E68D94 /* LocationService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -133,6 +140,17 @@
 				46719CB022C28255005E21D5 /* SatelliteTableViewController.m */,
 			);
 			path = "Lesson2. Solar system";
+			sourceTree = "<group>";
+		};
+		469956EB22CCFC5900E68D94 /* Lesson3 */ = {
+			isa = PBXGroup;
+			children = (
+				469956DF22C7785400E68D94 /* NewsListTableViewController.h */,
+				469956E022C7785400E68D94 /* NewsListTableViewController.m */,
+				469956E522C88F6800E68D94 /* NewsDetail.h */,
+				469956E622C88F6800E68D94 /* NewsDetail.m */,
+			);
+			path = Lesson3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469956EA22CCF3A800E68D94 /* LocationService.m in Sources */,
 				4646A6AE22C090E20027ECE3 /* MainViewController.m in Sources */,
 				469956E122C7785400E68D94 /* NewsListTableViewController.m in Sources */,
+				469956EE22CCFC9B00E68D94 /* MapViewController.m in Sources */,
 				4646A6B922C090E30027ECE3 /* main.m in Sources */,
 				46719CAE22C25B6C005E21D5 /* SpaceCell.m in Sources */,
 				469956DE22C7726000E68D94 /* NewsModel.m in Sources */,

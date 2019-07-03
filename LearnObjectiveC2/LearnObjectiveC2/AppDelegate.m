@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "AnotherViewController.h"
 #import "NewsListTableViewController.h"
+#import "MapViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,8 +26,9 @@
     
     //MainViewController *mainViewController = [[MainViewController alloc] init];
     //AnotherViewController *anotherViewController = [[AnotherViewController alloc] init];
-    NewsListTableViewController *newsListTableViewController = [[NewsListTableViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: newsListTableViewController];
+    //NewsListTableViewController *newsListTableViewController = [[NewsListTableViewController alloc] init];
+    MapViewController *mapViewController = [[MapViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mapViewController];
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
