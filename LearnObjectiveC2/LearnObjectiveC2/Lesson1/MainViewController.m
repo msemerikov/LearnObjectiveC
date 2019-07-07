@@ -96,6 +96,7 @@
 
 - (void)buttonPressed {
     AnotherViewController *anotherViewController = [[AnotherViewController alloc] init];
+    //[self presentViewController:anotherViewController animated:YES completion:nil];
     
     [self.navigationController showViewController:anotherViewController sender:self];
 

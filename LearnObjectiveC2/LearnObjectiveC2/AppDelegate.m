@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
-#import "AnotherViewController.h"
-#import "NewsListTableViewController.h"
-#import "MapViewController.h"
+#import "TabBarController.h"
 
 @interface AppDelegate ()
 
@@ -24,11 +21,8 @@
     CGRect windowFrame = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame: windowFrame];
     
-    //MainViewController *mainViewController = [[MainViewController alloc] init];
-    //AnotherViewController *anotherViewController = [[AnotherViewController alloc] init];
-    //NewsListTableViewController *newsListTableViewController = [[NewsListTableViewController alloc] init];
-    MapViewController *mapViewController = [[MapViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mapViewController];
+    TabBarController *tabBarController = [[TabBarController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: tabBarController];
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];

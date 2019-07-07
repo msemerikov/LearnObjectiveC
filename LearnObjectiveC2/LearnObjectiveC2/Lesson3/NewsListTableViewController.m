@@ -74,9 +74,6 @@
     }
     NewsModel *model = [self.news objectAtIndex:indexPath.row];
     
-//    NSString *pokemonName = [model pokemonName];
-//    pokemonName = [pokemonName stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[pokemonName substringToIndex:1] uppercaseString]];
-    
     cell.textLabel.text = [model title];
     cell.detailTextLabel.text = [model published];
     
@@ -90,6 +87,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.indicator stopAnimating];
+        [[self navigationController] setNavigationBarHidden:NO];
         [self.navigationController pushViewController:vc animated:true];
     });
     

@@ -19,9 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[self navigationController] setNavigationBarHidden:NO];
-    [self setTitle:@"Солнечная система"];
-    [self.navigationController.navigationBar setPrefersLargeTitles:YES];
     
     self.spaceBodies = [NSMutableArray new];
     [self.spaceBodies addObjectsFromArray:@[@"Sun", @"Mercury", @"Venus", @"Earth", @"Moon", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", @"Pluto"]];
@@ -40,6 +37,13 @@
     
     [self.view addSubview:self.tableView];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self navigationController] setNavigationBarHidden:NO];
+    [self setTitle:@"Солнечная система"];
+    [self.navigationController.navigationBar setPrefersLargeTitles:YES];
 }
 
 #pragma mark - UITableViewDataSource -
@@ -64,6 +68,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SatelliteTableViewController *satvc = [[SatelliteTableViewController alloc] init];
     satvc.spaceBody = _spaceBodies[indexPath.row];
+    NSString *planet = _spaceBodies[indexPath.row];
+    [[satvc navigationController] setNavigationBarHidden:NO];
+    [satvc setTitle:planet];
+    [satvc.navigationController.navigationBar setPrefersLargeTitles:YES];
     [self.navigationController pushViewController:satvc animated:YES];
 }
 
