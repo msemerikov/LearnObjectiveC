@@ -38,12 +38,12 @@ static NSString * const reuseIdentifier = @"Cell";
         model.imageName = spaceBodies[i];
         [self.dataArray addObject:model];
     }
-
-//    self.searchController = [[UISearchController alloc] init];
-//    self.searchController.dimsBackgroundDuringPresentation = false;
-//    [self.searchController setSearchResultsUpdater:self];
-//    [self.navigationItem setSearchController:self.searchController];
-//    [self.searchController.searchBar sizeToFit];
+    
+    //    self.searchController = [[UISearchController alloc] init];
+    //    self.searchController.dimsBackgroundDuringPresentation = false;
+    //    [self.searchController setSearchResultsUpdater:self];
+    //    [self.navigationItem setSearchController:self.searchController];
+    //    [self.searchController.searchBar sizeToFit];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 10.0;
@@ -74,7 +74,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if (self.searchBar.text != nil && [self.searchArray count] > 0) {
+    if ([self.searchArray count] > 0) {
         return [self.searchArray count];
     }
     return [self.dataArray count];
@@ -84,8 +84,13 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor whiteColor]];
     
-    CollectionModel *model = [[CollectionModel alloc] init];
-    model = self.dataArray[indexPath.item];
+    CollectionModel *model = nil;//[[CollectionModel alloc] init];
+    
+    if ([self.searchArray count] > 0) {
+        model = self.searchArray[indexPath.item];
+    } else {
+        model = self.dataArray[indexPath.item];
+    }
     
     self.spaceBodyImage = [[UIImageView alloc] init];
     [self.spaceBodyImage setContentMode:UIViewContentModeScaleAspectFill];
@@ -96,6 +101,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.spaceBodyLabel = [[UILabel alloc] init];
     [self.spaceBodyLabel setTextAlignment:NSTextAlignmentCenter];
+    [self.spaceBodyLabel setBackgroundColor:[UIColor whiteColor]];
     [self.spaceBodyLabel setFont:[UIFont systemFontOfSize:20 weight:UIFontWeightRegular]];
     [self.spaceBodyLabel setText:model.imageName];
     [self.spaceBodyLabel setFrame:CGRectMake(2, self.view.bounds.size.width / 2 - 38, self.view.bounds.size.width / 2 - 9, 30)];
@@ -110,19 +116,26 @@ static NSString * const reuseIdentifier = @"Cell";
     [searchBar setShowsCancelButton:YES animated:YES];
 }
 
+//- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.imageName CONTAINS[cd]%@", searchBar.text];
+//    self.searchArray = [self.dataArray filteredArrayUsingPredicate:predicate];
+//    [self.collectionView reloadData];
+//}
+
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
     [searchBar setText:@""];
     [searchBar setShowsCancelButton:NO animated:YES];
+    self.searchArray = nil;
+    [self.collectionView reloadData];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.imageName CONTAINS[cd]%@", searchBar.text];
-    self.searchArray = nil;
     self.searchArray = [self.dataArray filteredArrayUsingPredicate:predicate];
     [self.collectionView reloadData];
 }
 
-- (void)updateSearchResultsForSearchController:(nonnull UISearchController *)searchController { 
+- (void)updateSearchResultsForSearchController:(nonnull UISearchController *)searchController {
     if (searchController.searchBar.text) {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.imageName CONTAINS[cd]%@", searchController.searchBar.text];
         self.searchArray = [self.dataArray filteredArrayUsingPredicate:predicate];
