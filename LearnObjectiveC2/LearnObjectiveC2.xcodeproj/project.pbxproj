@@ -22,6 +22,13 @@
 		469956E722C88F6800E68D94 /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E622C88F6800E68D94 /* NewsDetail.m */; };
 		469956EA22CCF3A800E68D94 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956E922CCF3A800E68D94 /* LocationService.m */; };
 		469956EE22CCFC9B00E68D94 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469956ED22CCFC9B00E68D94 /* MapViewController.m */; };
+		469A3EA222D446D500E676F7 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EA122D446D500E676F7 /* CoreDataService.m */; };
+		469A3EA522D4489D00E676F7 /* PlanetDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EA322D4489D00E676F7 /* PlanetDataModel.xcdatamodeld */; };
+		469A3EAE22D4497C00E676F7 /* Planets+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EAC22D4497C00E676F7 /* Planets+CoreDataClass.m */; };
+		469A3EAF22D4497C00E676F7 /* Planets+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EAD22D4497C00E676F7 /* Planets+CoreDataProperties.m */; };
+		469A3EB222D44ED300E676F7 /* PlanetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EB122D44ED300E676F7 /* PlanetsTableViewController.m */; };
+		469A3EB522D457F300E676F7 /* CreatePlanetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EB422D457F300E676F7 /* CreatePlanetViewController.m */; };
+		469A3EB822D4939B00E676F7 /* DetailPlanetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A3EB722D4939B00E676F7 /* DetailPlanetVC.m */; };
 		469F2BCD22D1CBC400C4F663 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F2BCC22D1CBC400C4F663 /* TabBarController.m */; };
 		469F2BD022D1E39000C4F663 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F2BCF22D1E39000C4F663 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
@@ -56,6 +63,19 @@
 		469956E922CCF3A800E68D94 /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
 		469956EC22CCFC9B00E68D94 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		469956ED22CCFC9B00E68D94 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		469A3EA022D446D500E676F7 /* CoreDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
+		469A3EA122D446D500E676F7 /* CoreDataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
+		469A3EA422D4489D00E676F7 /* PlanetDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlanetDataModel.xcdatamodel; sourceTree = "<group>"; };
+		469A3EAA22D4497C00E676F7 /* Planets+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Planets+CoreDataProperties.h"; sourceTree = "<group>"; };
+		469A3EAB22D4497C00E676F7 /* Planets+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Planets+CoreDataClass.h"; sourceTree = "<group>"; };
+		469A3EAC22D4497C00E676F7 /* Planets+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Planets+CoreDataClass.m"; sourceTree = "<group>"; };
+		469A3EAD22D4497C00E676F7 /* Planets+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Planets+CoreDataProperties.m"; sourceTree = "<group>"; };
+		469A3EB022D44ED300E676F7 /* PlanetsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsTableViewController.h; sourceTree = "<group>"; };
+		469A3EB122D44ED300E676F7 /* PlanetsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsTableViewController.m; sourceTree = "<group>"; };
+		469A3EB322D457F300E676F7 /* CreatePlanetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatePlanetViewController.h; sourceTree = "<group>"; };
+		469A3EB422D457F300E676F7 /* CreatePlanetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatePlanetViewController.m; sourceTree = "<group>"; };
+		469A3EB622D4939B00E676F7 /* DetailPlanetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailPlanetVC.h; sourceTree = "<group>"; };
+		469A3EB722D4939B00E676F7 /* DetailPlanetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailPlanetVC.m; sourceTree = "<group>"; };
 		469F2BCB22D1CBC400C4F663 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		469F2BCC22D1CBC400C4F663 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		469F2BCE22D1E39000C4F663 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
@@ -97,6 +117,7 @@
 				469956EB22CCFC5900E68D94 /* Lesson3 */,
 				469F2BCA22D1CB8E00C4F663 /* Lesson4 */,
 				46F4F74B22D1E99E002C3F6B /* Lesson5 */,
+				469A3EB922D4E81F00E676F7 /* Lesson6 */,
 				469956D622C771D600E68D94 /* Services */,
 				4646A6A922C090E20027ECE3 /* AppDelegate.h */,
 				4646A6AA22C090E20027ECE3 /* AppDelegate.m */,
@@ -118,6 +139,9 @@
 				469956D822C7721C00E68D94 /* NetworkService.m */,
 				469956E822CCF3A800E68D94 /* LocationService.h */,
 				469956E922CCF3A800E68D94 /* LocationService.m */,
+				469A3EA022D446D500E676F7 /* CoreDataService.h */,
+				469A3EA122D446D500E676F7 /* CoreDataService.m */,
+				469A3EA322D4489D00E676F7 /* PlanetDataModel.xcdatamodeld */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -125,6 +149,10 @@
 		469956DA22C7724400E68D94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				469A3EAA22D4497C00E676F7 /* Planets+CoreDataProperties.h */,
+				469A3EAB22D4497C00E676F7 /* Planets+CoreDataClass.h */,
+				469A3EAC22D4497C00E676F7 /* Planets+CoreDataClass.m */,
+				469A3EAD22D4497C00E676F7 /* Planets+CoreDataProperties.m */,
 				469956DC22C7726000E68D94 /* NewsModel.h */,
 				469956DD22C7726000E68D94 /* NewsModel.m */,
 			);
@@ -162,6 +190,19 @@
 				469956E622C88F6800E68D94 /* NewsDetail.m */,
 			);
 			path = Lesson3;
+			sourceTree = "<group>";
+		};
+		469A3EB922D4E81F00E676F7 /* Lesson6 */ = {
+			isa = PBXGroup;
+			children = (
+				469A3EB022D44ED300E676F7 /* PlanetsTableViewController.h */,
+				469A3EB122D44ED300E676F7 /* PlanetsTableViewController.m */,
+				469A3EB322D457F300E676F7 /* CreatePlanetViewController.h */,
+				469A3EB422D457F300E676F7 /* CreatePlanetViewController.m */,
+				469A3EB622D4939B00E676F7 /* DetailPlanetVC.h */,
+				469A3EB722D4939B00E676F7 /* DetailPlanetVC.m */,
+			);
+			path = Lesson6;
 			sourceTree = "<group>";
 		};
 		469F2BCA22D1CB8E00C4F663 /* Lesson4 */ = {
@@ -215,6 +256,7 @@
 				TargetAttributes = {
 					4646A6A522C090E20027ECE3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -253,19 +295,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469A3EA222D446D500E676F7 /* CoreDataService.m in Sources */,
 				469956EA22CCF3A800E68D94 /* LocationService.m in Sources */,
 				4646A6AE22C090E20027ECE3 /* MainViewController.m in Sources */,
 				469F2BCD22D1CBC400C4F663 /* TabBarController.m in Sources */,
+				469A3EAF22D4497C00E676F7 /* Planets+CoreDataProperties.m in Sources */,
 				469956E122C7785400E68D94 /* NewsListTableViewController.m in Sources */,
 				469956EE22CCFC9B00E68D94 /* MapViewController.m in Sources */,
+				469A3EB822D4939B00E676F7 /* DetailPlanetVC.m in Sources */,
+				469A3EB522D457F300E676F7 /* CreatePlanetViewController.m in Sources */,
 				4646A6B922C090E30027ECE3 /* main.m in Sources */,
 				46719CAE22C25B6C005E21D5 /* SpaceCell.m in Sources */,
 				464CB87022D22773008D89C2 /* CollectionModel.m in Sources */,
 				469956DE22C7726000E68D94 /* NewsModel.m in Sources */,
+				469A3EA522D4489D00E676F7 /* PlanetDataModel.xcdatamodeld in Sources */,
 				469F2BD022D1E39000C4F663 /* CollectionViewController.m in Sources */,
 				469956E722C88F6800E68D94 /* NewsDetail.m in Sources */,
+				469A3EAE22D4497C00E676F7 /* Planets+CoreDataClass.m in Sources */,
 				46719CB122C28255005E21D5 /* SatelliteTableViewController.m in Sources */,
 				4646A6AB22C090E20027ECE3 /* AppDelegate.m in Sources */,
+				469A3EB222D44ED300E676F7 /* PlanetsTableViewController.m in Sources */,
 				469956D922C7721C00E68D94 /* NetworkService.m in Sources */,
 				46719C9F22C0C30F005E21D5 /* AnotherViewController.m in Sources */,
 			);
@@ -401,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 786FYLB3L3;
 				INFOPLIST_FILE = LearnObjectiveC2/Info.plist;
@@ -410,6 +460,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MikhailSemerikov.LearnObjectiveC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -418,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 786FYLB3L3;
 				INFOPLIST_FILE = LearnObjectiveC2/Info.plist;
@@ -427,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MikhailSemerikov.LearnObjectiveC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -453,6 +507,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		469A3EA322D4489D00E676F7 /* PlanetDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				469A3EA422D4489D00E676F7 /* PlanetDataModel.xcdatamodel */,
+			);
+			currentVersion = 469A3EA422D4489D00E676F7 /* PlanetDataModel.xcdatamodel */;
+			path = PlanetDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4646A69E22C090E20027ECE3 /* Project object */;
 }

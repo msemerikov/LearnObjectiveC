@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarController.h"
+#import "PlanetsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,10 @@
     CGRect windowFrame = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame: windowFrame];
     
-    TabBarController *tabBarController = [[TabBarController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: tabBarController];
+    PlanetsTableViewController *planetsTableViewController = [[PlanetsTableViewController alloc] init];
+    
+    //TabBarController *tabBarController = [[TabBarController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: planetsTableViewController];
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
